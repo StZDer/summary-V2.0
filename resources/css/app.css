@@ -1,0 +1,143 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ececec;
+    font-style: italic;
+}
+.about {
+    display: flex;
+}
+.row {
+    color: #0c172d;
+    position: flex;
+}
+.about-text {
+    text-align: left;
+    color: #0c172d;
+    line-height: 140%;
+    /*margin: auto;  отцентровало по середине */
+}
+.about img {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.line {
+    border-bottom: 4px solid #0c172d;
+}
+.about-text h1 {
+    font-size: 50px;
+}
+.contacts {
+    background: #314274;
+    color: white;
+    text-align: center;
+}
+.contacts a {
+    color: white;
+}
+
+.contacts img {
+    width: 20px;
+}
+td {
+    padding: 10px; /* Поля вокруг текста */
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+
+.table {
+    margin-bottom: 100px;
+    font-family: emoji;
+}
+
+a {
+    text-decoration: none;
+}
+thead {
+    background-color: #4e4e4e;
+    color: white;
+}
+.btn-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 19px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 7px;
+}
+.one {
+    background-color: #4e4e4e;
+    color: white; /* Цвет символа */
+}
+.wrap {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    min-width: 200px;
+    min-height: 60px;
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #584fd1;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 97, 185) 0%,
+        rgb(0, 97, 185) 100%
+    );
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(0, 97, 185, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button:hover,
+.button:focus {
+    color: #ffffff;
+    transform: translateY(-6px);
+}
+
+button:hover::before,
+button:focus::before {
+    opacity: 1;
+}
+
+button::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #0061b9;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+button:hover::after,
+button:focus::after {
+    animation: none;
+    display: none;
+}
+.black {
+    color: black;
+    font-size: 125%;
+}
